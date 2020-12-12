@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+const natural = require('natural');
+
+const tokenizer = new natural.WordTokenizer();
+
+console.log(tokenizer.tokenize("your dog has fleas."))
+
 function App() {
   return (
     <div className="App">
